@@ -48,3 +48,12 @@ const checkType1 = (param) => {
 };
 
 // checkType1(param2);
+function checkType2(param) {
+  if (param instanceof Array) {
+    console.log("It is an array");
+  } else {
+    console.log("It is not an array");
+  }
+}
+
+// checkType2(param2);
