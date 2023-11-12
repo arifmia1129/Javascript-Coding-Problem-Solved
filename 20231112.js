@@ -65,4 +65,28 @@ const checkType3 = (param) => {
   }
 };
 
-checkType3(param2);
+// checkType3(param2);
+
+// ## How to empty an array
+
+let arrayList = ["a", "b", "c", "d", "e"];
+
+// Method-1:
+arrayList = [];
+
+// Method-2:
+let anotherArrayList = arrayList;
+arrayList = [];
+// console.log(arrayList, anotherArrayList);
+
+// Method-3:
+arrayList.splice(0, arrayList.length);
+
+// console.log(arrayList);
+
+// Method 4:
+if (arrayList.length) {
+  arrayList.pop();
+}
+
+// console.log(arrayList);
