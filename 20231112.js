@@ -90,3 +90,12 @@ if (arrayList.length) {
 }
 
 // console.log(arrayList);
+
+// ## How would check if a number is an interger?
+
+function isInt(num) {
+  return num % 1 === 0;
+}
+
+console.log(isInt(4));
+console.log(isInt(4.5));
