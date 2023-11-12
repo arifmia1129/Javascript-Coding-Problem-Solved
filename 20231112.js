@@ -24,9 +24,27 @@ const reverseBySeperator = (string, seperator) => {
 // try reverse entire sentence
 const reverseEntireSentence = reverseBySeperator("binu", "");
 
-console.log(reverseEntireSentence);
+// console.log(reverseEntireSentence);
 
 // try reverse each word
 const reverseEachWord = reverseBySeperator("I am Full Stack Developer", " ");
 
-console.log(reverseEachWord);
+// console.log(reverseEachWord);
+
+// ## How to check if an object is an array or not?
+
+// There are several way to check it that is array or not. Bellow I explain 3 three ways to check it's data type is array or not
+
+let param1 = "Md. Arif Mia";
+let param2 = ["md", "arif", "mia"];
+
+// Method-1:
+const checkType1 = (param) => {
+  if (Array.isArray(param)) {
+    console.log("Your provided is an array");
+  } else {
+    console.log("Your provided data is not an array");
+  }
+};
+
+// checkType1(param2);
