@@ -57,3 +57,12 @@ function checkType2(param) {
 }
 
 // checkType2(param2);
+const checkType3 = (param) => {
+  if (param && typeof param === "object" && param.hasOwnProperty("length")) {
+    console.log("It is an array");
+  } else {
+    console.log("It is not an array");
+  }
+};
+
+checkType3(param2);
