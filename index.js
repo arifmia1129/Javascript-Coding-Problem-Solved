@@ -33,4 +33,19 @@ function modifyArr(arr) {
   return modifiedArr;
 }
 
-console.log(modifyArr(ar));
+// console.log(modifyArr(ar));
+
+// Find the maximum number in an array of numbers
+const findMax = (arr) => {
+  let maxNumber = arr[0];
+
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > maxNumber) {
+      maxNumber = arr[i];
+    }
+  }
+
+  return maxNumber;
+};
+
+// console.log(findMax(ar));
