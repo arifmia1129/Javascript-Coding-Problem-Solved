@@ -100,4 +100,21 @@ function sortArray(arr) {
 
 const unsortedArray = [64, 34, 25, 12, 22, 11, 90];
 
-console.log(sortArray(unsortedArray));
+// console.log(sortArray(unsortedArray));
+
+const getTargetIndex = (arr, target) => {
+  const length = arr.length;
+
+  for (let i = 0; i < length - 1; i++) {
+    for (let j = 1; j < length; j++) {
+      if (arr[i] + arr[j] === target) {
+        return [i, j];
+      }
+    }
+  }
+};
+
+const inputArray = [2, 7, 11, 15];
+const targetSum = 26;
+
+console.log(getTargetIndex(inputArray, targetSum));
