@@ -49,3 +49,34 @@ const findMax = (arr) => {
 };
 
 // console.log(findMax(ar));
+
+// fibonacci
+function fibonacci(n) {
+  const sequence = [0, 1];
+
+  for (let i = 2; i < n; i++) {
+    const nextNum = sequence[i - 1] + sequence[i - 2];
+    sequence.push(nextNum);
+  }
+
+  return sequence;
+}
+
+// console.log(fibonacci(10));
+
+// check prime number
+const isPrime = (num) => {
+  if (num <= 1) {
+    return false;
+  }
+
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i == 0) {
+      return false;
+    }
+  }
+
+  return true;
+};
+
+console.log(isPrime(3));
