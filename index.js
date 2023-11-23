@@ -17,3 +17,20 @@ const handleFetchedData = () => {
 };
 
 // handleFetchedData().then((data) => console.log(data));
+
+// Create a function that receives an array of numbers and returns an array containing only the positive numbers
+
+const ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+
+function modifyArr(arr) {
+  const modifiedArr = [];
+  for (const el of arr) {
+    if (el > 0) {
+      modifiedArr.push(el);
+    }
+  }
+
+  return modifiedArr;
+}
+
+console.log(modifyArr(ar));
