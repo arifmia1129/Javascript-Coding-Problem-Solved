@@ -97,5 +97,29 @@ function isInt(num) {
   return num % 1 === 0;
 }
 
-console.log(isInt(4));
-console.log(isInt(4.5));
+// console.log(isInt(4));
+// console.log(isInt(4.5));
+
+// ## Implement enqueue and dequeue using only two stacks
+
+let inputStack = []; //First stack
+let outputStack = []; //Second stack
+
+// For enqueue, just push the item into the first stack
+
+const enqueue = (stackInput, item) => {
+  return stackInput.push(item);
+};
+
+const dequeue = (stackInput, stackOutput) => {
+  if (stackOutput.length <= 0) {
+    while (stackInput.length > 0) {
+      var elementToOutput = stackInput.pop();
+      console.log(elementToOutput);
+      stackOutput.push(elementToOutput);
+    }
+  }
+  return stackOutput.pop();
+};
+
+console.log(dequeue([1, 2, 3], []));
